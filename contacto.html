@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lo que necesitas saber</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
+    a {
+      text-decoration: none; 
+      transition: all 0.2s ease-in-out;
+    }
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 20px;
+      background-color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #000000;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-image: url('img/form.png');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+    .form-container h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 25px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group label {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: all 0.2s ease-in-out;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #3115de;
+      outline: none;
+    }
+    .form-group button {
+      padding: 12px;
+      font-size: 18px;
+      background-color: #3115de;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .form-group button:hover {
+      background-color: #e31313;
+    }
+    .form-group button[type="reset"] {
+      background-color: #777;
+      margin-left: 10px;
+    }
+
+    section.intro-section {
+      position: relative; 
+      width: 100%; 
+      margin: 0; 
+      padding: 0;
+    }
+    section.intro-section img {
+      width: 100%;
+      height: 625px;
+      display: block;
+      object-fit: cover;
+    }
+    section.intro-section h2,
+    section.intro-section p {
+      position: absolute;
+      color: #ffffff;
+      left: 20px;
+    }
+    section.intro-section h2 {
+      top: 30px;
+      font-size: 45px;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    section.intro-section p {
+      font-size: 27px;
+      letter-spacing: 1px;
+      margin: 0;
+      width: calc(75% - 40px);
+    }
+    section.intro-section p:nth-child(3) { top: 100px; margin-top: 25px; }
+    section.intro-section p:nth-child(4) { top: 250px; margin-top: 55px; }
+    section.intro-section p:nth-child(5) { top: 520px; margin-top: 0px; }
+
+    footer {
+      background-color: #5C4033;
+      padding: 20px;
+      text-align: center;
+      color: #E6E6FA;
+    }
+    footer a {
+      color: #DAA520;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+    footer p {
+      margin-top: 20px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+  </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;">
+
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 5px 20px; background-color: #ffffff; position: sticky; top: 0; z-index: 1000;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="img/Aaa.png" alt="nuestro logo" style="width: 70px;">
+          <span style="font-size: 25px; font-weight: bold;">
+            <span style="color: #e31313;">Alerta</span> 
+            <span style="color: #3115de;">Digital</span>
+          </span>
+        </div>
+
+        <nav style="display: flex; align-items: center; gap: 25px;">
+          <a href="index.html" style="color: #000000; text-decoration: none; font-size: 25px;">Inicio</a>
+          <a href="acercade.html" style="color: #000000; text-decoration: none; font-size: 25px;">Acerca de</a>
+          <a href="contacto.html" style="color: #000000; text-decoration: none; font-size: 25px;">Contáctenos</a>
+        </nav>
+      </header>
+
+  <section class="form-container">
+    <h2>Contáctanos</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+507 6000-0000">
+      </div>
+
+      <div class="form-group">
+        <label for="asunto">Asunto:</label>
+        <select id="asunto" name="asunto" required>
+          <option value="">Selecciona un asunto</option>
+          <option value="consulta">Consulta general</option>
+          <option value="soporte">Soporte técnico</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="archivo">Adjuntar archivo (opcional):</label>
+        <input type="file" id="archivo" name="archivo">
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="terminos" required> Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a>.
+        </label>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Enviar mensaje</button>
+      </div>
+    </form>
+  </section>
+
+  <footer style="background: url('img/intro.png') no-repeat center center/cover; padding: 20px; text-align: center; font-family: 'Poppins', sans-serif; position: relative; color: #ffffff;">
+          <div id="contacto" style="font-size: 1.5em;">
+              <h4 style="margin-bottom: 10px;">Contáctanos y síguenos en instagram:</h4>
+              
+              <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                  <a href="https://www.instagram.com/alertadigital/" style="color: #ffffff; font-size: 20px; display: flex; align-items: center; text-decoration: none;">
+                      <img src="img/instagramlogo.webp" alt="Instagram" style="width: 24px; height: 34px; margin-right: 5px;"> AlertaDigital
+                  </a>
+              </div>
+              
+              <p style="font-size: 14px; margin-top: 20px;">
+                  © 2025 Alerta Digital. Todos los derechos reservados.
+              </p>
+          </div>
+      </footer>
+
+</body>
+</html>

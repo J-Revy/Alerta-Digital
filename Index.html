@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lo que necesitas saber</title>
+  <style>
+    html { scroll-behavior: smooth; 
+          scroll-padding-top: 80px; 
+          }
+
+    a {
+      text-decoration: none; 
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .content-wrapper aside {
+    position: static; /* deja de ser sticky */
+    border-left: none;
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+  }
+}
+  </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;">
+
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 5px 20px; background-color: #ffffff; position: sticky; top: 0; z-index: 1000;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="img/Aaa.png" alt="nuestro logo" style="width: 70px;">
+          <span style="font-size: 25px; font-weight: bold;">
+            <span style="color: #e31313;">Alerta</span> 
+            <span style="color: #3115de;">Digital</span>
+          </span>
+        </div>
+
+        <nav style="display: flex; align-items: center; gap: 25px;">
+          <a href="index.html" style="color: #000000; text-decoration: none; font-size: 25px;">Inicio</a>
+          <a href="acercade.html" style="color: #000000; text-decoration: none; font-size: 25px;">Acerca de</a>
+          <a href="contacto.html" style="color: #000000; text-decoration: none; font-size: 25px;">Contáctenos</a>
+        </nav>
+      </header>
+
+  <section style="position: relative; width: 100%; margin: 0; padding: 0;">
+    <img src="img/fondo.png" alt="Deepfakes" style="width: 100%; height: 545px; display: block; object-fit: cover;">
+    <h2 style="position: absolute; top: 30px; left: 20px; color: #ffffff; font-size: 45px; letter-spacing: 2px; margin: 0;">
+      Nuevas Amenazas y Tendencias en Ciberseguridad
+    </h2>
+    <p style="position: absolute; top: 100px; left: 20px; color: #ffffff; font-size: 24px; letter-spacing: 1px; margin: 0; margin-top: 25px; width: calc(75% - 40px);">
+      El panorama actual de la ciberseguridad representa una encrucijada crítica marcada por una transformación digital acelerada y una sofisticación sin precedentes en las tácticas de los actores de amenazas. La convergencia de tecnologías emergentes, el paradigma del trabajo híbrido y la expansión masiva de la superficie de ataque han redefinido los parámetros de la defensa digital.
+    </p>
+    <p style="position: absolute; top: 250px; left: 20px; color: #ffffff; font-size: 24px; letter-spacing: 1px; margin: 0; margin-top: 55px; width: calc(75% - 40px);">
+      Esta investigación exhaustiva analiza la evolución del ecosistema de amenazas, identificando no solo los vectores de ataque más peligrosos sino también las estrategias defensivas que están configurando el futuro de la resiliencia organizacional. La era de la protección basada en perímetros está definitivamente obsoleta, dando paso a un modelo de seguridad dinámico, centrado en la identidad y basado en el principio fundamental de "nunca confíes, verifica siempre".
+    </p>
+  </section>
+
+  <div class="content-wrapper" style="display: flex; align-items: flex-start; gap: 20px; padding: 20px;">
+
+    <main style="flex: 3; padding-right: 20px;">
+
+      <h2 id="amenazas-emergentes" style="font-size: 40px; color: #e31313; letter-spacing: 1px; margin-top: 0;">Nuevas Amenazas</h2>
+      <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+
+          <img src="img/ia.jpg" alt="IA en ciberataques" style="width: 250px; height: auto; border-radius: 10px;">
+
+          <div style="margin: 0;">
+              <p style="font-size: 20px; color: #000; letter-spacing: 0.5px; text-align: justify; margin:0;">
+                  La naturaleza en constante evolución de las ciberamenazas ha trascendido la era de los ataques aislados y esporádicos, dando paso a un panorama dominado por campañas continuas, altamente coordinadas y de largo alcance. Estas campañas son ejecutadas por actores de amenazas cada vez más especializados y organizados en estructuras similares a corporaciones, que operan con una sofisticación y persistencia sin precedentes.
+              </p>
+          </div>
+      </div>
+
+
+      <a href="https://www-upguard-com.translate.goog/blog/ai-cybercrime?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">
+        <h3 id="ciberataques-ia" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Ciberataques impulsados por IA</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px;">
+        Los ciberataques impulsados por IA utilizan inteligencia artificial para automatizar ataques, adaptarse en tiempo real y evadir defensas tradicionales.
+      </p>
+
+      <a href="https://stellarcyber.ai/es/learn/what-is-ai-powered-phishing/">
+        <h4 id="phishing-hiperrealista" style="font-size: 26px; margin-top: 10px; margin-bottom: 6px; padding-left: 25px;">◈ Phishing hiperrealista</h4>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px; padding-left: 25px;">
+        El phishing hiperrealista es una técnica de phishing que emplea la Inteligencia Artificial y otras tecnologías para crear mensajes y deepfakes de voz extremadamente convincentes, haciéndose pasar por fuentes legítimas para engañar a las víctimas y obtener información sensible.
+      </p>
+
+      <a href="https://www.trendmicro.com/es_es/what-is/ai/deepfakes.html">
+        <h4 id="deepfakes" style="font-size: 26px; margin-top: 10px; margin-bottom: 6px; padding-left: 25px;">◈ Deepfakes</h4>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 20px; padding-left: 25px;">
+        Los deepfakes son recursos que pueden incluir contenido de audio, visual o textual manipulado, creado mediante inteligencia artificial generativa (GenAI). Los ciberdelincuentes los utilizan principalmente con fines económicos, de engaño y manipulación.
+      </p>
+
+      <a href="https://www.redseguridad.com/actualidad/el-ransomware-evoluciona-hacia-la-extorsion-cuadruple-con-ddos-y-acoso-a-terceros_20250829.html">
+        <h3 id="ransomware" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Ransomware en evolución</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px;">
+        El ransomware ha evolucionado desde simples secuestradores de archivos hasta amenazas complejas que incluyen hasta la "extorsión cuadruple" y el modelo de "Ransomware as a Service", que democratiza su uso.
+      </p>
+
+      <a href="https://unit42-paloaltonetworks-com.translate.goog/2025-ransomware-extortion-trends/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">
+        <h3 id="extorsion-multiple" style="font-size: 26px; margin-top: 15px; margin-bottom: 8px; padding-left: 25px;">◈ Extorsión múltiple</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px; padding-left: 25px;">
+        La extorsión múltiple es una estrategia de ciberataque que utiliza múltiples métodos de amenaza para forzar a una víctima a pagar un rescate, yendo más allá del simple cifrado de datos. Las variantes comunes son la doble extorsión, donde se exfiltran datos y se amenaza con su publicación además del cifrado, y la triple extorsión, que añade un tercer ataque como una denegación de servicio distribuido o la amenaza a terceros de la víctima. 
+      </p>
+
+      <a href="https://www.fortinet.com/lat/resources/cyberglossary/ransomware-as-a-service-raas">
+        <h3 id="raas" style="font-size: 26px; margin-top: 15px; margin-bottom: 8px; padding-left: 25px;">◈ RaaS (Ransomware como Servicio)</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px; padding-left: 25px; margin-bottom: 20px;">
+        El ransomware como servicio ( RaaS ) es un modelo de negocio de ciberdelincuencia en el que los operadores de ransomware crean software y sus afiliados pagan para lanzar ataques utilizando dicho software.  Los afiliados no necesitan tener habilidades técnicas propias, sino que confían en las habilidades técnicas de los operadores.<br>
+
+        <p style="font-size: 20px; margin-top: 15px; margin-bottom: 8px; padding-left: 25px;">El modelo de "ransomware como servicio" es una variante delictiva del modelo de negocio de " software como servicio ". Este modelo permite a los atacantes de menor envergadura acceder a herramientas de ransomware sofisticadas a un menor coste, lo que también reduce el umbral de entrada al ciberdelito y complica las defensas contra la piratería.
+      </p>
+
+      <div style="margin: 20px 0; text-align: center;">
+          <iframe width="100%" height="480" src="https://www.youtube.com/embed/Vsb0x1mcNyc" title="Video de Ransomware" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <a href="https://www.fortinet.com/lat/resources/cyberglossary/supply-chain-attacks">
+        <h3 id="cadena-suministro" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Ataques a la cadena de suministro</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px;">
+        Un ataque a la cadena de suministro, también llamado ataque de cadena de valor o ataque de terceros, consiste en comprometer proveedores digitales de servicios externos como instrumento para infiltrarse desde allí en una organización objetivo. El asegurarse de que los proveedores de servicios externos son confiables es extremadamente difícil. La indirección dificulta la identificación del atacante. Este tipo de ataques tienen gran potencial debido a que un proveedor puede dar servicio a muchos clientes, los cuales a su vez pueden ser proveedores de otros. De esta forma, en una sola operación puede infectar todos los clientes .
+      </p>
+
+      <a href="https://www.fortinet.com/lat/resources/cyberglossary/iot-device-vulnerabilities">
+        <h3 id="vulnerabilidades-iot-nube" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Vulnerabilidades en la nube y el IoT</h3>
+      </a>
+      <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 15px;">
+
+          <img src="img/nube.jpg" alt="Vulnerabilidades en la nube" style="width: 250px; height: auto; border-radius: 10px;">
+
+          <div style="margin: 0;">
+          <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px;">
+            Las principales vulnerabilidades en la nube incluyen configuraciones incorrectas, API inseguras y la mala gestión del acceso, mientras que las de IoT son el software obsoleto, las contraseñas débiles, la falta de cifrado y la vulnerabilidad de las actualizaciones. Ambas áreas comparten riesgos como las amenazas internas y el error humano, que pueden ser explotados para robar datos, tomar el control de dispositivos o lanzar ataques de gran escala como las botnets de IoT.
+          </p>
+        </div>
+      </div>
+
+      <a href="https://www-paloaltonetworks-com.translate.goog/cyberpedia/what-is-quantum-computings-threat-to-cybersecurity?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq#:~:text=Riesgos%20de%20la%20computaci%C3%B3n%20cu%C3%A1ntica,-Prepararse%20para%20posibles&text=Compromiso%20de%20la%20integridad%20de,transacciones%20y%20verificaci%C3%B3n%20de%20identidad.">
+        <h3 id="riesgos-cuanticos" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Riesgos de la computación cuántica</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px;">
+        La computación cuántica representa un avance revolucionario en la capacidad de cálculo, pero también plantea riesgos significativos. Uno de los más graves es el relacionado con la ciberseguridad. Hoy en día, la mayoría de los sistemas de seguridad digital como RSA, ECC y Diffie-Hellman dependen de problemas matemáticos que son muy difíciles de resolver para los ordenadores clásicos. Sin embargo, un ordenador cuántico suficientemente potente podría romper estas barreras en cuestión de horas o incluso minutos, lo que pondría en peligro datos financieros, comunicaciones privadas, información gubernamental y militar. Esto hace imprescindible el desarrollo de nuevas técnicas de criptografía poscuántica.
+      </p>
+
+      <a href="https://example.com/actores-estatales">
+        <h3 id="actores-estatales" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Amenazas de actores estatales</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 25px;">
+        Las amenazas de actores estatales en la ciberseguridad se han convertido en uno de los principales focos de preocupación a nivel global. A diferencia de los ciberdelincuentes comunes, los estados cuentan con recursos financieros, humanos y tecnológicos mucho mayores, lo que les permite llevar a cabo operaciones altamente sofisticadas y persistentes. Estos ataques suelen estar motivados por intereses estratégicos, geopolíticos o militares, y rara vez buscan beneficios económicos inmediatos.</p>
+
+        <p style="font-size: 20px; margin-top: 15px; margin-bottom: 8px;">Una de las principales amenazas es el ciberespionaje. Los estados utilizan intrusiones digitales para obtener información sensible de gobiernos, empresas estratégicas y centros de investigación. El robo de secretos industriales, diseños tecnológicos, investigaciones científicas y datos de inteligencia les proporciona ventajas competitivas y militares. Este tipo de operaciones suelen pasar desapercibidas durante años, lo que aumenta su efectividad.
+      </p>
+
+      <h2 id="tendencias" style="font-size: 40px; margin-top: 35px; margin-bottom: 8px; color: #e31313; letter-spacing: 1px;">Nuevas tendencias en ciberseguridad</h2>
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+          <div style="margin: 0;">
+          <p style="font-size: 20px; color: #000; letter-spacing: 0.5px; text-align: justify;">
+          Las nuevas tendencias en ciberseguridad incluyen el uso de Inteligencia Artificial para la detección y respuesta a amenazas, la adopción de la arquitectura Zero Trust para un acceso más seguro, la creciente amenaza de deepfakes y el phishing, la seguridad en entornos de nube y OT (Tecnología de la Operación), el impacto de la computación cuántica, y la mayor importancia de la seguridad móvil y el trabajo remoto. 
+          </p>
+        </div>
+        <img src="img/tend.jpg" alt="Tendencias en Ciberseguridad" style="width: 250px; height: auto; border-radius: 10px;">
+      </div>
+
+      <a href="https://www.fortinet.com/lat/resources/cyberglossary/artificial-intelligence-in-cybersecurity">
+        <h3 id="defensa-ia" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Defensa impulsada por IA</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 25px;">
+        La IA en ciberseguridad revoluciona la detección y respuesta ante amenazas mediante algoritmos de aprendizaje automático que analizan millones de eventos de seguridad por segundo e identifican patrones indetectables para los humanos. Las organizaciones que utilizan IA en ciberseguridad reducen los tiempos de respuesta a incidentes en un 70%, alcanzando tasas de detección de amenazas del 98%, según el Informe de Seguridad de IA de IBM . 
+      </p>
+
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+        <div style="margin: 0;">
+        <a href="https://stellarcyber.ai/es/learn/what-is-ai-powered-phishing/">
+          <h4 id="sol-auto" style="font-size: 26px; margin-top: 10px; margin-bottom: 6px; padding-left: 25px;">◈ Soluciones Autonomas</h4>
+        </a>
+        <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px; padding-left: 25px;">
+          El phishing hiperrealista es una técnica de phishing que emplea la Inteligencia Artificial y otras tecnologías para crear mensajes y deepfakes de voz extremadamente convincentes, haciéndose pasar por fuentes legítimas para engañar a las víctimas y obtener información sensible.
+        </p>
+
+        <a href="https://stellarcyber.ai/es/learn/what-is-ai-powered-phishing/">
+          <h4 id="detec-deepfake" style="font-size: 26px; margin-top: 10px; margin-bottom: 6px; padding-left: 25px;">◈ Detección de deepfakes</h4>
+        </a>
+        <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 15px; padding-left: 25px;">
+          El phishing hiperrealista es una técnica de phishing que emplea la Inteligencia Artificial y otras tecnologías para crear mensajes y deepfakes de voz extremadamente convincentes, haciéndose pasar por fuentes legítimas para engañar a las víctimas y obtener información sensible.
+        </p>
+        </div>
+        <img src="img/def.jpg" alt="IA en defensa" style="width: 300px; height: auto; border-radius: 10px;">
+      </div>
+
+      <a href="https://www.akamai.com/es/glossary/what-is-zero-trust#:~:text=Zero%20Trust%20es%20una%20estrategia,resumen%2C%20significa%20cero%20confianza%20impl%C3%ADcita.">
+        <h3 id="zero-trust" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Zero Trust</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 25px;">
+        Zero Trust es una estrategia de ciberseguridad que opera bajo el principio de "nunca confiar, siempre verificar". Se basa en la idea de que no se debe confiar en ninguna persona o dispositivo de forma implícita, incluso si se encuentran dentro de la red de una organización. En su lugar, cada intento de acceso a recursos o sistemas requiere una verificación estricta de la identidad y otros factores para determinar si es legítimo. 
+      </p>
+
+      <a href="https://www-dragos-com.translate.goog/blog/what-is-asset-visibility?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">
+        <h3 id="activos" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Enfoque en la visibilidad de activos</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 25px;">
+        El enfoque en la visibilidad de activos de ciberseguridad implica la identificación y el seguimiento de todos los dispositivos, aplicaciones y componentes de la red para comprender el entorno digital de una organización, detectar vulnerabilidades y mejorar la respuesta a amenazas. Esto se logra mediante el descubrimiento activo de activos, el uso de herramientas de monitorización de red y la gestión de la exposición para consolidar la información de diversas fuentes, creando un inventario completo y en tiempo real. 
+      </p>
+
+      <a href="https://www-ibm-com.translate.goog/think/topics/threat-hunting?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">
+        <h3 id="Caza-amenazas" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Threat Hunting</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 25px;">
+        El Threat Hunting es una práctica proactiva de ciberseguridad que consiste en la búsqueda activa y sistemática de amenazas cibernéticas ocultas dentro de una red o sistema, incluso aquellas que logran evadir las defensas automatizadas. Los "cazadores de amenazas" utilizan datos de seguridad, inteligencia sobre amenazas y diversas herramientas para identificar, investigar y neutralizar indicadores de compromiso y actividades sospechosas, como APT o malware, antes de que causen daños significativos. 
+      </p>
+
+      <a href="https://www-nist-gov.translate.goog/cybersecurity/what-post-quantum-cryptography?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=sge#:~:text=%C2%BFEn%20qu%C3%A9%20se%20diferencia%20la,informaci%C3%B3n%20sobre%20la%20criptograf%C3%ADa%20cu%C3%A1ntica.">
+        <h3 id="post-cuántica" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Criptografía post-cuántica</h3>
+      </a>
+      <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 25px;">
+        La criptografía post-cuántica es un conjunto de algoritmos y técnicas criptográficas diseñados para resistir ataques de las futuras computadoras cuánticas, que podrían romper la criptografía clásica actual. Estos algoritmos se basan en problemas matemáticos que las computadoras cuánticas, a pesar de su gran poder de cálculo, no pueden resolver eficientemente.
+      </p>
+
+      <a href="https://www.fortinet.com/lat/resources/cyberglossary/what-is-cloud-security">
+        <h3 id="seguridad-nube" style="font-size: 32px; margin-top: 15px; margin-bottom: 8px;">Seguridad en la nube</h3>
+      </a>
+      <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+          <img src="img/nube1.jpeg" alt="Seguridad en la nube" style="width: 250px; height: auto; border-radius: 10px;">
+
+          <div style="margin: 0;">
+          <p style="font-size: 20px; color: #000; text-align: justify; margin-bottom: 25px;">
+          La seguridad en la nube se refiere a un conjunto de políticas, tecnologías y procedimientos para proteger las aplicaciones, datos e infraestructura alojados en la nube contra amenazas como accesos no autorizados, ataques en línea y malware. Implica un enfoque integral que abarca la protección de datos en reposo y en movimiento, la gestión de identidades y accesos, el cifrado avanzado, la monitorización proactiva y la respuesta automatizada a incidentes. 
+          </p>
+        </div>
+      </div>
+
+    </main>
+
+    <aside style="flex: 1; padding: 20px; background-color: #f9f9f9; border-left: 2px solid #ccc; position: sticky; top: 65px; height: fit-content;">
+      <h3 style="font-size: 26px; color: #000; letter-spacing: 1px; margin-top: 0;">Tabla de contenido</h3>
+      <ul style="list-style: none; padding: 0; font-size: 18px; color: #000; letter-spacing: 0.5px;">
+        <li style="margin-bottom: 12px;">
+          <a href="#amenazas-emergentes" style="font-size: 20px; font-weight: bold;">Nuevas Amenazas</a>
+          <ul style="list-style: none; padding-left: 14px; margin-top: 8px;">
+            <li style="margin-bottom: 8px;"><a href="#ciberataques-ia" style="color: #26A4FF; font-size: 18px;">Ciberataques impulsados por IA</a></li>
+            <li style="margin-bottom: 8px;"><a href="#ransomware" style="color: #26A4FF; font-size: 18px;">Ransomware en evolución</a></li>
+            <li style="margin-bottom: 8px;"><a href="#cadena-suministro" style="color: #26A4FF; font-size: 18px;">Ataques a cadenas de suministro</a></li>
+            <li style="margin-bottom: 8px;"><a href="#vulnerabilidades-iot-nube" style="color: #26A4FF; font-size: 18px;">Vulnerabilidades en la nube y IoT</a></li>
+            <li style="margin-bottom: 8px;"><a href="#riesgos-cuanticos" style="color: #26A4FF; font-size: 18px;">Riesgos de la compuatción cuántica</a></li>
+            <li style="margin-bottom: 8px;"><a href="#actores-estatales" style="color: #26A4FF; font-size: 18px;">Amenazas de actores estatales</a></li>
+          </ul>
+        </li>
+        <li style="margin-bottom: 10px;">
+          <a href="#tendencias" style="font-size: 20px; font-weight: bold;">Nuevas tendencias</a>
+          <ul style="list-style: none; padding-left: 14px; margin-top: 8px;">
+            <li style="margin-bottom: 8px;"><a href="#defensa-ia" style="color: #26A4FF; font-size: 18px;">Defensa impulsada por IA</a></li>
+            <li style="margin-bottom: 8px;"><a href="#zero-trust" style="color: #26A4FF; font-size: 18px;">Zero Trust</a></li>
+            <li style="margin-bottom: 8px;"><a href="#Caza-amenazas" style="color: #26A4FF; font-size: 18px;">Threat Hunting</a></li>
+            <li style="margin-bottom: 8px;"><a href="#post-cuántica" style="color: #26A4FF; font-size: 18px;">Criptografía post-cuántica</a></li>
+            <li style="margin-bottom: 8px;"><a href="#seguridad-nube" style="color: #26A4FF; font-size: 18px;">Seguridad en la nube</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <footer style="background: url('img/intro.png') no-repeat center center/cover; padding: 20px; text-align: center; font-family: 'Poppins', sans-serif; position: relative; color: #ffffff;">
+            <div id="contacto" style="font-size: 1.5em;">
+                <h4 style="margin-bottom: 10px;">Contáctanos y síguenos en instagram:</h4>
+                
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a href="https://www.instagram.com/alertadigital/" style="color: #ffffff; font-size: 20px; display: flex; align-items: center; text-decoration: none;">
+                        <img src="img/instagramlogo.webp" alt="Instagram" style="width: 24px; height: 34px; margin-right: 5px;"> AlertaDigital
+                    </a>
+                </div>
+                
+                <p style="font-size: 14px; margin-top: 20px;">
+                    © 2025 Alerta Digital. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+
+</body>
+</html>
